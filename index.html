@@ -13,7 +13,8 @@
     <title>Paradox Gym</title>
     
    
- <link rel="stylesheet" href="cookieconsent-2.8.2/src/cookieconsent.css" media="print" onload="this.media='all'">  
+<!-- <link rel="stylesheet" href="cookieconsent-2.8.2/src/cookieconsent.css" media="print" onload="this.media='all'">  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body>
@@ -47,10 +48,25 @@
     </footer>
 </div>
 
-
+<!--
 <script defer src="cookieconsent-2.8.2/src/cookieconsent.js"></script>
 <script defer src="cookieconsent-2.8.2/src/cookieconsent-init.js"></script>
-
+-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "position": "bottom-right"
+});
+</script>
 
 </body>
 </html>
